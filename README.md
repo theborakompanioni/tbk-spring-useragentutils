@@ -3,19 +3,13 @@ spring-useragentutils
 
 A user-agent resolver abstraction for server-side detection of browser and operating system.
 
-### Example Configuration
+### Installation
+Register a ```UserAgentResolverHandlerInterceptor``` and a ```UserAgentHandlerMethodArgumentResolver```.
 
-Register a ```UserAgentResolverHandlerInterceptor``` and
-a ```UserAgentHandlerMethodArgumentResolver```.
-
+#### Example Configuration
 ```java
 @Configuration
 public class SpringUserAgentUtilsConfiguration extends WebMvcConfigurerAdapter {
-
-    @PostConstruct
-    public void init() {
-        log.info("SpringUserAgentUtilsConfiguration init");
-    }
 
     @Bean
     public UserAgentResolverHandlerInterceptor userAgentResolverHandlerInterceptor() {
@@ -38,13 +32,16 @@ public class SpringUserAgentUtilsConfiguration extends WebMvcConfigurerAdapter {
     }
 }
 ```
+#### Example Controller
 
 The following example shows a controller returning a resolved UserAgent object either
 from a given User-Agent string or resolved from the requesting client:
+
 ```java
 @RestController
 @RequestMapping("/app/rest/useragent")
 public class UserAgentCtrl {
+
     @Builder
     @Value
     private static class UserAgentResource {
@@ -76,6 +73,17 @@ public class UserAgentCtrl {
 
         return ResponseEntity.ok(resource);
     }
+}
+```
+Request URL: `http://localhost:8080/app/rest/useragent`
+Returns the client user agent, e.g.:
+```
+{
+  "browser": "FIREFOX36",
+  "browserType": "WEB_BROWSER",
+  "operatingSystem": "LINUX",
+  "operatingSystemGroup": "LINUX",
+  "deviceType": "COMPUTER"
 }
 ```
 
