@@ -1,7 +1,7 @@
 spring-useragentutils
 ===
 
-A user-agent resolver abstraction for server-side detection of browser and operating system.
+A [Spring](https://spring.io/) user-agent resolver for server-side detection of browser and operating system.
 
 ### Installation
 Register a ```UserAgentResolverHandlerInterceptor``` and a ```UserAgentHandlerMethodArgumentResolver```.
