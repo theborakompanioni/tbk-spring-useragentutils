@@ -13,7 +13,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebMvc
-public class SpringUserAgentUtilsTestConfiguration extends WebMvcConfigurerAdapter {
+class SpringUserAgentUtilsTestConfiguration extends WebMvcConfigurerAdapter {
 
     @Bean
     public UserAgentTestCtrl userAgentCtrl() {
