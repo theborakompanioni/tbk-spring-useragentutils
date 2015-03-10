@@ -1,10 +1,12 @@
-spring-useragentutils
+[![Build Status](https://travis-ci.org/theborakompanioni/tbk-spring-useragentutils.svg)](https://travis-ci.org/theborakompanioni/tbk-spring-useragentutils)
+
+tbk-spring-useragentutils
 ===
 
 A [Spring](https://spring.io/) user-agent resolver for server-side detection of browser and operating system.
 
 ### Installation
-Register a ```UserAgentResolverHandlerInterceptor``` and a ```UserAgentHandlerMethodArgumentResolver```.
+Create a `UserAgentResolverHandlerInterceptor` and a `UserAgentHandlerMethodArgumentResolver` bean.
 
 #### Example Configuration
 ```java
@@ -75,9 +77,10 @@ public class UserAgentCtrl {
     }
 }
 ```
+
 Request URL: `http://localhost:8080/app/rest/useragent`
 Returns the client user agent, e.g.:
-```
+```javascript
 {
   "browser": "FIREFOX36",
   "browserType": "WEB_BROWSER",
@@ -87,27 +90,16 @@ Returns the client user agent, e.g.:
 }
 ```
 
+
 Request URL: `http://localhost:8080/app/rest/useragent?userAgent=Mozilla%2F5.0%20(compatible%3B%20MSIE%2010.0%3B%20Windows%20NT%206.1%3B%20Trident%2F4.0%3B%20InfoPath.2%3B%20SV1%3B%20.NET%20CLR%202.0.50727%3B%20WOW64)`
 
-```
+```javascript
 {
   "browser": "IE10",
   "browserType": "WEB_BROWSER",
   "operatingSystem": "WINDOWS_7",
   "operatingSystemGroup": "WINDOWS",
   "deviceType": "COMPUTER"
-}
-```
-
-Request URL: `http://localhost:8080/app/rest/useragent?userAgent=Mozilla%2F5.0%20(Linux%3B%20U%3B%20Android%204.0.3%3B%20ko-kr%3B%20LG-L160L%20Build%2FIML74K)%20AppleWebkit%2F534.30%20(KHTML%2C%20like%20Gecko)%20Version%2F4.0%20Mobile%20Safari%2F534.30`
-
-```
-{
-  "browser": "MOBILE_SAFARI",
-  "browserType": "MOBILE_BROWSER",
-  "operatingSystem": "ANDROID4",
-  "operatingSystemGroup": "ANDROID",
-  "deviceType": "MOBILE"
 }
 ```
 
