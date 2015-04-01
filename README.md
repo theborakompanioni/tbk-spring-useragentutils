@@ -5,7 +5,31 @@ tbk-spring-useragentutils
 
 A [Spring](https://spring.io/) user-agent resolver for server-side detection of browser and operating system.
 
-### Installation
+### Download
+
+#### Maven
+```xml
+<dependency>
+    <groupId>org.tbk</groupId>
+    <artifactId>spring-useragentutils</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+</dependency>
+```
+
+```xml
+<repositories>
+    <repository>
+        <id>tbk-spring-useragentutils-mvn-repo</id>
+        <url>https://raw.github.com/theborakompanioni/tbk-spring-useragentutils/mvn-repo/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+</repositories>
+```
+
+### Usage
 Create a `UserAgentResolverHandlerInterceptor` and a `UserAgentHandlerMethodArgumentResolver` bean.
 
 #### Example Configuration
@@ -102,7 +126,6 @@ Request URL: `http://localhost:8080/app/rest/useragent?userAgent=Mozilla%2F5.0%2
   "deviceType": "COMPUTER"
 }
 ```
-
 
 
 License
