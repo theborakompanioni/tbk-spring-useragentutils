@@ -1,6 +1,11 @@
+# IntelliJ
 .idea
 *.iml
 
+# OS X
 .DS_Store
+
+# mvn versions:set
+pom.xml.versionsBackup
 
 target
