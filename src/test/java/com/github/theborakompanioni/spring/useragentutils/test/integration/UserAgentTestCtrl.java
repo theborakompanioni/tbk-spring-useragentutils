@@ -1,4 +1,4 @@
-package org.tbk.spring.useragentutils.test.integration;
+package com.github.theborakompanioni.spring.useragentutils.test.integration;
 
 import eu.bitwalker.useragentutils.*;
 import org.springframework.http.ResponseEntity;

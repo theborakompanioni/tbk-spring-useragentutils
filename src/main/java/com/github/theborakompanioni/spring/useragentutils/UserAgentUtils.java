@@ -1,4 +1,4 @@
-package org.tbk.spring.useragentutils;
+package com.github.theborakompanioni.spring.useragentutils;
 
 import eu.bitwalker.useragentutils.UserAgent;
 import org.springframework.web.context.request.RequestAttributes;

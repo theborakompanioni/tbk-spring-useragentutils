@@ -1,5 +1,6 @@
-package org.tbk.spring.useragentutils.test.integration;
+package com.github.theborakompanioni.spring.useragentutils.test.integration;
 
+import com.github.theborakompanioni.spring.useragentutils.test.UserAgentStrings;
 import eu.bitwalker.useragentutils.Browser;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +14,6 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-import org.tbk.spring.useragentutils.test.UserAgentStrings;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;

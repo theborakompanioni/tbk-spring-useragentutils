@@ -1,4 +1,4 @@
-package org.tbk.spring.useragentutils.test;
+package com.github.theborakompanioni.spring.useragentutils.test;
 
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.UserAgent;
@@ -7,8 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
-import org.tbk.spring.useragentutils.UserAgentResolverHandlerInterceptor;
-import org.tbk.spring.useragentutils.UserAgentUtils;
+import com.github.theborakompanioni.spring.useragentutils.UserAgentResolverHandlerInterceptor;
+import com.github.theborakompanioni.spring.useragentutils.UserAgentUtils;
 
 public class UserAgentResolverHandlerInterceptorTest {
 

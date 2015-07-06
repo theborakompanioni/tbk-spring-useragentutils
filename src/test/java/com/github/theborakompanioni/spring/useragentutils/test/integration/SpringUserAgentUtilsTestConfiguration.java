@@ -1,4 +1,4 @@
-package org.tbk.spring.useragentutils.test.integration;
+package com.github.theborakompanioni.spring.useragentutils.test.integration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -6,8 +6,8 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.tbk.spring.useragentutils.UserAgentHandlerMethodArgumentResolver;
-import org.tbk.spring.useragentutils.UserAgentResolverHandlerInterceptor;
+import com.github.theborakompanioni.spring.useragentutils.UserAgentHandlerMethodArgumentResolver;
+import com.github.theborakompanioni.spring.useragentutils.UserAgentResolverHandlerInterceptor;
 
 import java.util.List;
 

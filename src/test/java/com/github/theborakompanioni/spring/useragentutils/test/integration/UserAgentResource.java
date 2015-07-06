@@ -1,4 +1,4 @@
-package org.tbk.spring.useragentutils.test.integration;
+package com.github.theborakompanioni.spring.useragentutils.test.integration;
 
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.BrowserType;
@@ -99,7 +99,7 @@ class UserAgentResource {
     }
 
     public String toString() {
-        return "org.tbk.spring.useragentutils.test.integration.UserAgentTestCtrl.UserAgentResource(browser=" + this.browser + ", browserGroup=" + this.browserGroup + ", browserType=" + this.browserType + ", operatingSystem=" + this.operatingSystem + ", operatingSystemGroup=" + this.operatingSystemGroup + ", deviceType=" + this.deviceType + ")";
+        return "UserAgentTestCtrl.UserAgentResource(browser=" + this.browser + ", browserGroup=" + this.browserGroup + ", browserType=" + this.browserType + ", operatingSystem=" + this.operatingSystem + ", operatingSystemGroup=" + this.operatingSystemGroup + ", deviceType=" + this.deviceType + ")";
     }
 
     public static class UserAgentResourceBuilder {
@@ -148,7 +148,7 @@ class UserAgentResource {
         }
 
         public String toString() {
-            return "org.tbk.spring.useragentutils.test.integration.UserAgentTestCtrl.UserAgentResource.UserAgentResourceBuilder(browser=" + this.browser + ", browserGroup=" + this.browserGroup + ", browserType=" + this.browserType + ", operatingSystem=" + this.operatingSystem + ", operatingSystemGroup=" + this.operatingSystemGroup + ", deviceType=" + this.deviceType + ")";
+            return "UserAgentTestCtrl.UserAgentResource.UserAgentResourceBuilder(browser=" + this.browser + ", browserGroup=" + this.browserGroup + ", browserType=" + this.browserType + ", operatingSystem=" + this.operatingSystem + ", operatingSystemGroup=" + this.operatingSystemGroup + ", deviceType=" + this.deviceType + ")";
         }
     }
 }

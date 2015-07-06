@@ -10,7 +10,7 @@ A [Spring](https://spring.io/) user-agent resolver for server-side detection of 
 #### Maven
 ```xml
 <dependency>
-    <groupId>org.tbk</groupId>
+    <groupId>com.github.theborakompanioni</groupId>
     <artifactId>spring-useragentutils</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 </dependency>
