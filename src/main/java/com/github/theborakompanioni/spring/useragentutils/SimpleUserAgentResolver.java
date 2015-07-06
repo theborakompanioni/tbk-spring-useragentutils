@@ -8,8 +8,8 @@ public class SimpleUserAgentResolver implements UserAgentResolver {
     private static final String USER_AGENT_HTTP_HEADER = "User-Agent";
 
     public UserAgent resolveUserAgent(HttpServletRequest request) {
-        String userAgent = request.getHeader(USER_AGENT_HTTP_HEADER);
+        String userAgentOrNull = request.getHeader(USER_AGENT_HTTP_HEADER);
 
-        return UserAgent.parseUserAgentString(userAgent);
+        return UserAgent.parseUserAgentString(userAgentOrNull);
     }
 }

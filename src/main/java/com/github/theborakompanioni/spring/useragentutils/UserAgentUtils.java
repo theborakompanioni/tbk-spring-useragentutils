@@ -17,6 +17,6 @@ public final class UserAgentUtils {
     }
 
     public static UserAgent getCurrentUserAgent(RequestAttributes attributes) {
-        return (UserAgent) attributes.getAttribute(CURRENT_USERAGENT_ATTRIBUTE, 0);
+        return (UserAgent) attributes.getAttribute(CURRENT_USERAGENT_ATTRIBUTE, RequestAttributes.SCOPE_REQUEST);
     }
 }
