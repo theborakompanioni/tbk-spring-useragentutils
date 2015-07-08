@@ -12,21 +12,8 @@ A [Spring](https://spring.io/) user-agent resolver for server-side detection of 
 <dependency>
     <groupId>com.github.theborakompanioni</groupId>
     <artifactId>spring-useragentutils</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.1.1</version>
 </dependency>
-```
-
-```xml
-<repositories>
-    <repository>
-        <id>tbk-spring-useragentutils-mvn-repo</id>
-        <url>https://raw.github.com/theborakompanioni/tbk-spring-useragentutils/mvn-repo/</url>
-        <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-        </snapshots>
-    </repository>
-</repositories>
 ```
 
 ### Usage
