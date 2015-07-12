@@ -38,7 +38,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring.version>4.1.5.RELEASE</spring.version>
-        <UserAgentUtils.version>1.15</UserAgentUtils.version>
+        <UserAgentUtils.version>1.16</UserAgentUtils.version>
         <slf4j.version>1.6.4</slf4j.version>
         <junit.version>4.11</junit.version>
         <easymock.version>3.1</easymock.version>
