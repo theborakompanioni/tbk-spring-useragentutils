@@ -1,14 +1,15 @@
 package com.github.theborakompanioni.spring.useragentutils.test;
 
+import com.github.theborakompanioni.spring.useragentutils.UserAgentResolverHandlerInterceptor;
+import com.github.theborakompanioni.spring.useragentutils.UserAgentUtils;
 import eu.bitwalker.useragentutils.Browser;
 import eu.bitwalker.useragentutils.UserAgent;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.http.HttpHeaders;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
-import com.github.theborakompanioni.spring.useragentutils.UserAgentResolverHandlerInterceptor;
-import com.github.theborakompanioni.spring.useragentutils.UserAgentUtils;
 
 public class UserAgentResolverHandlerInterceptorTest {
 
@@ -32,7 +33,7 @@ public class UserAgentResolverHandlerInterceptorTest {
     @Test
     public void testWithEmptyUserAgent() throws Exception {
         MockHttpServletRequest request = new MockHttpServletRequest();
-        request.addHeader("User-Agent", "");
+        request.addHeader(HttpHeaders.USER_AGENT, "");
 
         userAgentResolverHandlerInterceptor.preHandle(request, new MockHttpServletResponse(), null);
 
@@ -43,7 +44,7 @@ public class UserAgentResolverHandlerInterceptorTest {
     @Test
     public void testFirefoxUserAgent() throws Exception {
         MockHttpServletRequest request = new MockHttpServletRequest();
-        request.addHeader("User-Agent", UserAgentStrings.FIREFOX);
+        request.addHeader(HttpHeaders.USER_AGENT, UserAgentStrings.FIREFOX);
 
         userAgentResolverHandlerInterceptor.preHandle(request, new MockHttpServletResponse(), null);
 
