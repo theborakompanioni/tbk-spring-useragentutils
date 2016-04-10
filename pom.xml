@@ -21,9 +21,9 @@
     </licenses>
 
     <scm>
-        <url>git@github.com:theborakompanioni/tbk-spring-useragentutils.git</url>
-        <connection>git@github.com:theborakompanioni/tbk-spring-useragentutils.git</connection>
-        <developerConnection>git@github.com:theborakompanioni/tbk-spring-useragentutils.git</developerConnection>
+        <url>scm:git:git@github.com:theborakompanioni/tbk-spring-useragentutils.git</url>
+        <connection>scm:git:git@github.com:theborakompanioni/tbk-spring-useragentutils.git</connection>
+        <developerConnection>scm:git:git@github.com:theborakompanioni/tbk-spring-useragentutils.git</developerConnection>
     </scm>
 
     <developers>
