@@ -12,7 +12,7 @@ A [Spring](https://spring.io/) user-agent resolver for server-side detection of 
 <dependency>
     <groupId>com.github.theborakompanioni</groupId>
     <artifactId>spring-useragentutils</artifactId>
-    <version>1.1.1</version>
+    <version>${tbk-spring-useragentutils.version}</version>
 </dependency>
 ```
 
