@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/theborakompanioni/tbk-spring-useragentutils.svg)](https://travis-ci.org/theborakompanioni/tbk-spring-useragentutils)
+[![GitHub Release](https://img.shields.io/github/release/theborakompanioni/tbk-spring-useragentutils.svg?maxAge=3600)](https://github.com/theborakompanioni/tbk-spring-useragentutils/releases/latest)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.theborakompanioni/spring-useragentutils.svg?maxAge=3600)](search.maven.org/#search|ga|1|g%3A%22com.github.theborakompanioni%22%20AND%20a%3A%22spring-useragentutils%22)
+[![License](https://img.shields.io/github/license/theborakompanioni/tbk-spring-useragentutils.svg?maxAge=2592000)](https://github.com/theborakompanioni/tbk-spring-useragentutils/blob/master/LICENSE)
 
 tbk-spring-useragentutils
 ===
