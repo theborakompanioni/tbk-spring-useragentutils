@@ -23,7 +23,8 @@
     <scm>
         <url>scm:git:git@github.com:theborakompanioni/tbk-spring-useragentutils.git</url>
         <connection>scm:git:git@github.com:theborakompanioni/tbk-spring-useragentutils.git</connection>
-        <developerConnection>scm:git:git@github.com:theborakompanioni/tbk-spring-useragentutils.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:theborakompanioni/tbk-spring-useragentutils.git
+        </developerConnection>
     </scm>
 
     <developers>
@@ -38,7 +39,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring.version>4.2.5.RELEASE</spring.version>
-        <UserAgentUtils.version>1.19</UserAgentUtils.version>
+        <UserAgentUtils.version>1.20</UserAgentUtils.version>
         <slf4j.version>1.7.21</slf4j.version>
         <junit.version>4.12</junit.version>
         <easymock.version>3.4</easymock.version>
